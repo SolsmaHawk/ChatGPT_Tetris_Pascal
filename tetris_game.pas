@@ -231,7 +231,6 @@ begin
     end;
     MoveTetrimino(CurrentTetrimino, 0, 1);
     if not CanMove(CurrentTetrimino, 0, 1) then begin
-      EraseTetrimino(CurrentTetrimino);
       PlaceTetriminoOnBoard(CurrentTetrimino);
       CheckLines;
       CurrentTetrimino := NextTetrimino;
